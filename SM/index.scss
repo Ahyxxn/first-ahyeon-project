@@ -1,0 +1,783 @@
+@import url(./reset.css);
+
+.flex{display: flex;}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+section{height: 100vh;}
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+    
+    header{ 
+        z-index: 999;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        position: fixed;
+        height: 12vh;
+        width: 100vw;
+        top: 0;
+        z-index: 99;
+        background: rgba(0, 0, 0,0.5);
+        .logo{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            img{width: 7vw;}
+        }
+
+
+          
+    }
+    
+
+    #sect1{
+       
+        .swiper {
+            width: 90%;
+            height: 90%;
+            .swiper-wrapper{ 
+                .swiper-slide {
+                    
+                    text-align: center;
+                    font-size: 18px;
+                    background: rgb(0, 0, 0);
+                    
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+
+                    .decs_wrap{color: #fff;
+                    position: absolute;}
+                     video {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        object-fit:cover;
+                    }
+                }
+            } 
+        } 
+    }
+
+
+    #sect4{
+       display: flex;
+        position: relative;
+        .sect4_menu{
+
+            background: #151515;
+            
+            h2{position: absolute;
+                top:20%;
+                left: 50%;
+                transform: translate(-50%);
+                font-size: 3vw;
+                font-weight: bolder;
+                color: #fff;
+            }
+
+            .sect4_tabmenu{
+               
+        
+              
+                li{color: #fff;}
+                
+                li.pink img{
+                    width: 5.4vw;
+                }
+                li.on::before{
+                    border-bottom-color: #292929;
+                    border-top-color: #292929;}
+                li.pink.on::before{ border-top-color: #FCE1E6;}
+                li:hover{cursor: pointer;}
+                li:hover::before{
+                    border-bottom-color: #292929;
+                    border-top-color: #292929;
+                }
+                li.pink:hover::before{
+                    border-top-color: #FCE1E6;
+                }
+
+                
+            }
+        }
+
+        .rtcontent{
+
+            ul.wrap{
+                >li{  
+                    position: absolute;
+                    left: 50%;
+                    top: 15%;
+                    transform: translate(-50%);
+                    display: none;
+                    
+                    &.on{display: block;}
+
+                    h2{color: #fff;
+                        margin-bottom: 5vh;
+                        text-align: center;
+                        font-size: 2vw;
+                    }
+
+                    ul{
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        li{
+                            cursor: pointer;
+                            position: relative;
+
+                            
+                            a img{
+                                width: 100%;
+                                height: 100%;
+                            }   
+                        }
+                        li:after{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 0%;
+                            background: rgba(255, 192, 229, 0.6);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            transition: .4s;
+                            color: #fff;
+                            font-weight: 900;
+                            text-align: center;
+                            
+
+                        }
+
+                        li:hover:after{
+                            height: 100%;
+                     
+                           
+
+                        }
+                    }
+                    
+                }
+                li:nth-child(1) ul li:nth-child(1):hover:after
+                {content: '강한나';}
+                li:nth-child(1) ul li:nth-child(2):hover:after
+                {content: '고아성';}
+                li:nth-child(1) ul li:nth-child(3):hover:after
+                {content: '강현오';}
+                li:nth-child(1) ul li:nth-child(4):hover:after
+                {content: '김동욱';}
+                li:nth-child(1) ul li:nth-child(5):hover:after
+                {content: '김새벽';}
+                li:nth-child(1) ul li:nth-child(6):hover:after
+                {content: '김서형';}
+                li:nth-child(1) ul li:nth-child(7):hover:after
+                {content: '김시은';}
+                li:nth-child(1) ul li:nth-child(8):hover:after
+                {content: '김의성';}
+                li:nth-child(1) ul li:nth-child(9):hover:after
+                {content: '김재철';}
+                li:nth-child(1) ul li:nth-child(10):hover:after
+                {content: '문가영';}
+                li:nth-child(1) ul li:nth-child(11):hover:after
+                {content: '미람';}
+                li:nth-child(1) ul li:nth-child(12):hover:after
+                {content: '박수진';}
+
+                li:nth-child(2) ul li:nth-child(1):hover:after
+                {content: '태연';}
+                li:nth-child(2) ul li:nth-child(2):hover:after
+                {content: '유리';}
+                li:nth-child(2) ul li:nth-child(3):hover:after
+                {content: '써니';}
+                li:nth-child(2) ul li:nth-child(4):hover:after
+                {content: '효연';}
+                li:nth-child(2) ul li:nth-child(5):hover:after
+                {content: '웬디';}
+                li:nth-child(2) ul li:nth-child(6):hover:after
+                {content: '윤아';}
+                li:nth-child(2) ul li:nth-child(7):hover:after
+                {content: '슬기';}
+                li:nth-child(2) ul li:nth-child(8):hover:after
+                {content: '카리나';}
+                li:nth-child(2) ul li:nth-child(9):hover:after
+                {content: '지젤';}
+                li:nth-child(2) ul li:nth-child(10):hover:after
+                {content: '닝닝';}
+                li:nth-child(2) ul li:nth-child(11):hover:after
+                {content: '윈터';}
+                li:nth-child(2) ul li:nth-child(12):hover:after
+                {content: '이효리';}
+
+                li:nth-child(3) ul li:nth-child(1):hover:after
+                {content: '문규';}
+                li:nth-child(3) ul li:nth-child(2):hover:after
+                {content: '민준기';}
+                li:nth-child(3) ul li:nth-child(3):hover:after
+                {content: '박상혁';}
+                li:nth-child(3) ul li:nth-child(4):hover:after
+                {content: '박세원';}
+                li:nth-child(3) ul li:nth-child(5):hover:after
+                {content: '박슬기';}
+                li:nth-child(3) ul li:nth-child(6):hover:after
+                {content: '박제니';}
+                li:nth-child(3) ul li:nth-child(7):hover:after
+                {content: '박준성';}
+                li:nth-child(3) ul li:nth-child(8):hover:after
+                {content: '박지혜';}
+                li:nth-child(3) ul li:nth-child(9):hover:after
+                {content: '박혜진';}
+                li:nth-child(3) ul li:nth-child(10):hover:after
+                {content: '박호영';}
+                li:nth-child(3) ul li:nth-child(11):hover:after
+                {content: '백성철';}
+                li:nth-child(3) ul li:nth-child(12):hover:after
+                {content: '서유진';}
+
+                li:nth-child(4) ul li:nth-child(1):hover:after
+                {content: '강호동';}
+                li:nth-child(4) ul li:nth-child(2):hover:after
+                {content: '신동엽';}
+                li:nth-child(4) ul li:nth-child(3):hover:after
+                {content: '이수근';}
+                li:nth-child(4) ul li:nth-child(4):hover:after
+                {content: '김병만';}
+                li:nth-child(4) ul li:nth-child(5):hover:after
+                {content: '전현무';}
+                li:nth-child(4) ul li:nth-child(6):hover:after
+                {content: '서장훈';}
+                li:nth-child(4) ul li:nth-child(7):hover:after
+                {content: '김준현';}
+                li:nth-child(4) ul li:nth-child(8):hover:after
+                {content: '이진호';}
+                li:nth-child(4) ul li:nth-child(9):hover:after
+                {content: '김영철';}
+                li:nth-child(4) ul li:nth-child(10):hover:after
+                {content: '양세찬';}
+                li:nth-child(4) ul li:nth-child(11):hover:after
+                {content: '김이나';}
+                li:nth-child(4) ul li:nth-child(12):hover:after
+                {content: '한혜진';}
+
+                li:nth-child(5) ul li:nth-child(1):hover:after
+                {content: '임희정';}
+                li:nth-child(5) ul li:nth-child(2):hover:after
+                {content: '박보겸';}
+                li:nth-child(5) ul li:nth-child(3):hover:after
+                {content: '오지현';}
+                li:nth-child(5) ul li:nth-child(4):hover:after
+                {content: '손예빈';}
+                li:nth-child(5) ul li:nth-child(5):hover:after
+                {content: '안신애';}
+                li:nth-child(5) ul li:nth-child(6):hover:after
+                {content: '김민선';}
+                li:nth-child(5) ul li:nth-child(7):hover:after
+                {content: '박혜준';}
+                li:nth-child(5) ul li:nth-child(8):hover:after
+                {content: '서어진';}
+                li:nth-child(5) ul li:nth-child(9):hover:after
+                {content: '이주언';}
+                li:nth-child(5) ul li:nth-child(10):hover:after
+                {content: '고경민';}
+                li:nth-child(5) ul li:nth-child(11):hover:after
+                {content: '한창원';}
+                li:nth-child(5) ul li:nth-child(12):hover:after
+                {content: '심석희';}
+                
+                
+
+                
+                
+            }
+
+        }
+
+        article{
+            display: none;
+            z-index: 99;
+            position: absolute;
+            background: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);  
+            
+            .close{
+                position:absolute;
+                display: block;
+                right: 3%;
+                top: 2%;
+                
+            }
+
+            .inner{
+                display: flex;
+                position: relative;
+
+                margin: auto;
+                align-items: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding: 10px;
+                figure{
+                   width: 300px;
+                    img{width: 100%;}
+                }
+                .desc{
+                    h2{margin-bottom: 50px;
+                        font-weight: 900;
+                    }
+                    h4{margin-bottom: 10px;}
+                }
+            }
+            .aside{
+                position: absolute;
+                right: 3%;
+                bottom: 5%;
+                
+            }      
+        }
+    }
+
+}
+
+
+@media screen and (max-width:521px) {
+    #sect1{
+        .swiper-slide{
+            .decs_wrap{
+                h2{font-size: 20px;}
+                h3{font-size: 15px;}
+            }
+        }
+    }
+
+    #sect4{
+        flex-direction: column;
+        .sect4_menu{
+            position: relative;
+            height: 20vh;
+            width: 100vw;
+            
+            h2{
+              margin-top: 1rem;
+            }
+           .sect4_tabmenu{
+            width: 100%;
+            display: flex; 
+            flex-wrap: wrap; 
+            position: absolute;
+            bottom: 0;
+                li{background: rgb(0, 0, 0);
+                    text-align: center;
+                    font-size: 2vw;  
+                    width: 16.6vw;
+                    height:6.3vh;
+                    line-height: 6.3vh;
+                    &::before{display: none;}
+                }
+                
+                li.pink{ 
+                    line-height: 9vh;
+                    background: #FCE1E6;
+                }
+
+
+                li:hover{
+                    background: #FCE1E6;
+                    color: #000;
+                    font-weight: bold;
+                }
+                li.on{
+                    background: #FCE1E6;
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+        }    
+
+        .rtcontent{
+   
+            height: 80vh;
+            width: 100vw;
+            position: relative;  
+            ul.wrap{ 
+                width: 80vw;
+                >li{
+                    ul{
+                        position: absolute;
+                        width: 80vw;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        li{
+                            width: 18vw;
+                            margin-bottom: 10px;
+
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        article{
+            width: 100vw;
+            height: 80vh;
+            .close{img{width: 7vw;}}
+            .aside{img{width: 10vw;}}
+            .inner{
+                flex-direction: column;
+                .desc{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:522px){
+    #sect1{
+        .swiper-slide{
+           .decs_wrap{
+            h2{font-size: 40px;}
+            h3{font-size: 30px;}
+           }
+        }
+    }
+
+    #sect4{
+        flex-direction: column;
+        .sect4_menu{ 
+            position: relative;
+            height: 20vh;
+            width: 100vw;
+            
+            h2{
+              margin-top: 0;
+            }
+           .sect4_tabmenu{
+            display: flex;
+            flex-wrap: wrap; 
+            position: absolute;
+            bottom: 0;
+            li{background: rgb(0, 0, 0);
+                text-align: center;   
+                width: 16.5vw;
+                height: 7vh;
+                line-height: 7vh;
+            
+           }
+            
+           
+            li.pink{                  
+                width: 16.5vw;
+                height: 7vh;
+                line-height: 9vh;
+                background: #FCE1E6;
+            }
+            li:hover{
+                background: #FCE1E6;
+                color: #000;
+                font-weight: bold;
+            }
+            li.on{
+                background: #FCE1E6;
+                color: #000;
+                font-weight: bold;
+            }
+
+
+            
+            }
+        }    
+
+        .rtcontent{
+
+            height: 80vh;
+            width: 100vw;
+            position: relative;  
+            ul.wrap{ 
+                
+                >li{
+                    ul{
+                        position: absolute;
+
+                        width: 80vw;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        li{
+                            width: 18vw;
+                            margin-bottom: 10px;
+
+                        }
+                    }
+                }
+                
+            }
+                
+            
+        }
+
+        article{
+            width: 60vw;
+            height: 70vh;
+            .close{img{width: 5vw;}}
+            .aside{img{width: 7vw;}}
+            .inner{
+                flex-direction: column;
+                .desc{
+                    margin-top: 30px;
+                }
+            }
+        }
+         
+    }
+}
+
+@media screen and(min-width:1020px) {
+#sect4{flex-direction: row;
+    .sect4_menu{    
+        position: relative;
+        width: 50%;
+        height: 100vh;
+        .sect4_tabmenu{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          
+
+            li{
+                position: absolute;
+                font-size: 1vw;
+                background: none;
+            }
+            li:hover{background: none;
+            color: #fff;}
+            li.on{background: none;
+            color: #fff;
+            }
+            li.pink{background: none;}
+      
+            .pink{
+                position: absolute;
+                top: -15%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 10;
+                width:3vw;
+                height:8vh;
+                line-height: 8vh;
+                background: #FCE1E6;
+                
+                
+            }
+
+            .up1{
+                top: -3%;
+                right: -43%;
+                transform: translate(-50%);
+                z-index: 10;
+                width:85px;
+                height:75px;
+                line-height: 8vh;
+
+            }
+
+            .down1{
+                top: 69%;
+                right: -42.5%;
+                transform: translate(-50%);
+                z-index: 10;
+                width:85px;
+                height:75px;
+                line-height: 8vh;
+            }
+
+            .up2{
+                position: relative;
+                top: 91%;
+                left: 50%;
+                transform: translate(-50%);
+                z-index: 10;
+                width:85px;
+                height:75px;
+                line-height: 8vh;
+            }
+
+            .down2{
+                top: 60%;
+                left: -9%;
+                transform: translate(-50%);
+                z-index: 10;
+                width:85px;
+                height:75px;
+                line-height: 8vh;
+            }
+
+            .up3{
+                top: -3%;
+                left: -7%;
+                transform: translate(-36%);
+                z-index: 10;
+                width:85px;
+                height:75px;
+                line-height: 8vh;
+            }
+
+            
+            li::before{
+                display: inline-block;
+                z-index: -5;
+
+            }
+          
+            li.up1::before{
+                display: inline-block;              
+                content: '';
+                width: 0px;
+                height: 0px;
+                border-bottom: calc( 100px * 1.732 ) solid #000000;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-60%);
+                
+            }
+           
+
+            li.down1::before{
+                display: inline-block;              
+                content: '';
+                width: 0px;
+                height: 0px;
+                border-top: calc( 100px * 1.732 ) solid #000000;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                position: absolute;
+                top: -50%;
+                left: 50%;
+                transform: translate(-50%);
+                
+            }
+            li.up2::before{
+                display: inline-block;              
+                content: '';
+                width: 0px;
+                height: 0px;
+                border-bottom: calc( 100px * 1.732 ) solid #000000;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%,-60%);
+                
+            }
+            li.down2::before{
+                display: inline-block;              
+                content: '';
+                width: 0px;
+                height: 0px;
+                border-top: calc( 100px * 1.732 ) solid #000000;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                position: absolute;
+                top: 90%;
+                left: 70%;
+                transform: translate(-50%,-50%);
+                
+            }
+
+            li.up3::before{
+                display: inline-block;              
+                content: '';
+                width: 0px;
+                height: 0px;
+                border-bottom: calc( 100px * 1.732 ) solid #000000;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-60%);
+            }
+
+            li.pink::before{
+                display: inline-block;              
+                content: "";
+                width: 0px;
+                height: 0px;
+                border-top: calc( 100px * 1.732 ) solid #FCE1E6;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                position: absolute;
+                top: -20%;
+                left: 50%;
+                transform: translate(-50%);
+                                      
+            }
+
+        }
+    }
+
+    .rtcontent{
+        position: relative;
+        width: 50%;
+        height: 100vh;
+        ul.wrap{
+            >li{
+                ul{ width: 45vw;
+                    height: 75vh;
+                    li{
+                        width: 10vw;
+                        height: 10vw;
+                    }
+                    li:after{
+                        line-height: 10vw;
+                        font-size: 1.2vw;
+                    }
+                }
+
+            }  
+        }
+    }
+
+    article{
+        width: 45vw;
+        height: 60vh;
+        .close{img{width: 2.5vw;}}
+        .aside{img{width: 4vw}}
+        .inner{
+            flex-direction: row;
+            height: 40vh;
+            width: 40vw;
+            figure{margin-right: 2vw;}
+        }
+    }
+}
+}

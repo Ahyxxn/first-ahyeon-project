@@ -1,0 +1,745 @@
+@charset "UTF-8";
+@import url(./reset.css);
+.flex {
+  display: flex;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  z-index: 999;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  height: 12vh;
+  width: 100vw;
+  top: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
+}
+body header .logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+body header .logo img {
+  width: 7vw;
+}
+body #sect1 .swiper {
+  width: 90%;
+  height: 90%;
+}
+body #sect1 .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(0, 0, 0);
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #sect1 .swiper .swiper-wrapper .swiper-slide .decs_wrap {
+  color: #fff;
+  position: absolute;
+}
+body #sect1 .swiper .swiper-wrapper .swiper-slide video {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #sect4 {
+  display: flex;
+  position: relative;
+}
+body #sect4 .sect4_menu {
+  background: #151515;
+}
+body #sect4 .sect4_menu h2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 3vw;
+  font-weight: bolder;
+  color: #fff;
+}
+body #sect4 .sect4_menu .sect4_tabmenu li {
+  color: #fff;
+}
+body #sect4 .sect4_menu .sect4_tabmenu li.pink img {
+  width: 5.4vw;
+}
+body #sect4 .sect4_menu .sect4_tabmenu li.on::before {
+  border-bottom-color: #292929;
+  border-top-color: #292929;
+}
+body #sect4 .sect4_menu .sect4_tabmenu li.pink.on::before {
+  border-top-color: #FCE1E6;
+}
+body #sect4 .sect4_menu .sect4_tabmenu li:hover {
+  cursor: pointer;
+}
+body #sect4 .sect4_menu .sect4_tabmenu li:hover::before {
+  border-bottom-color: #292929;
+  border-top-color: #292929;
+}
+body #sect4 .sect4_menu .sect4_tabmenu li.pink:hover::before {
+  border-top-color: #FCE1E6;
+}
+body #sect4 .rtcontent ul.wrap > li {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%);
+  display: none;
+}
+body #sect4 .rtcontent ul.wrap > li.on {
+  display: block;
+}
+body #sect4 .rtcontent ul.wrap > li h2 {
+  color: #fff;
+  margin-bottom: 5vh;
+  text-align: center;
+  font-size: 2vw;
+}
+body #sect4 .rtcontent ul.wrap > li ul {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body #sect4 .rtcontent ul.wrap > li ul li {
+  cursor: pointer;
+  position: relative;
+}
+body #sect4 .rtcontent ul.wrap > li ul li a img {
+  width: 100%;
+  height: 100%;
+}
+body #sect4 .rtcontent ul.wrap > li ul li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background: rgba(255, 192, 229, 0.6);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+body #sect4 .rtcontent ul.wrap > li ul li:hover:after {
+  height: 100%;
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(1):hover:after {
+  content: "강한나";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(2):hover:after {
+  content: "고아성";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(3):hover:after {
+  content: "강현오";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(4):hover:after {
+  content: "김동욱";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(5):hover:after {
+  content: "김새벽";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(6):hover:after {
+  content: "김서형";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(7):hover:after {
+  content: "김시은";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(8):hover:after {
+  content: "김의성";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(9):hover:after {
+  content: "김재철";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(10):hover:after {
+  content: "문가영";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(11):hover:after {
+  content: "미람";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(1) ul li:nth-child(12):hover:after {
+  content: "박수진";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(1):hover:after {
+  content: "태연";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(2):hover:after {
+  content: "유리";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(3):hover:after {
+  content: "써니";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(4):hover:after {
+  content: "효연";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(5):hover:after {
+  content: "웬디";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(6):hover:after {
+  content: "윤아";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(7):hover:after {
+  content: "슬기";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(8):hover:after {
+  content: "카리나";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(9):hover:after {
+  content: "지젤";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(10):hover:after {
+  content: "닝닝";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(11):hover:after {
+  content: "윈터";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(2) ul li:nth-child(12):hover:after {
+  content: "이효리";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(1):hover:after {
+  content: "문규";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(2):hover:after {
+  content: "민준기";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(3):hover:after {
+  content: "박상혁";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(4):hover:after {
+  content: "박세원";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(5):hover:after {
+  content: "박슬기";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(6):hover:after {
+  content: "박제니";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(7):hover:after {
+  content: "박준성";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(8):hover:after {
+  content: "박지혜";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(9):hover:after {
+  content: "박혜진";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(10):hover:after {
+  content: "박호영";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(11):hover:after {
+  content: "백성철";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(3) ul li:nth-child(12):hover:after {
+  content: "서유진";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(1):hover:after {
+  content: "강호동";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(2):hover:after {
+  content: "신동엽";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(3):hover:after {
+  content: "이수근";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(4):hover:after {
+  content: "김병만";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(5):hover:after {
+  content: "전현무";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(6):hover:after {
+  content: "서장훈";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(7):hover:after {
+  content: "김준현";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(8):hover:after {
+  content: "이진호";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(9):hover:after {
+  content: "김영철";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(10):hover:after {
+  content: "양세찬";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(11):hover:after {
+  content: "김이나";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(4) ul li:nth-child(12):hover:after {
+  content: "한혜진";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(1):hover:after {
+  content: "임희정";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(2):hover:after {
+  content: "박보겸";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(3):hover:after {
+  content: "오지현";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(4):hover:after {
+  content: "손예빈";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(5):hover:after {
+  content: "안신애";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(6):hover:after {
+  content: "김민선";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(7):hover:after {
+  content: "박혜준";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(8):hover:after {
+  content: "서어진";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(9):hover:after {
+  content: "이주언";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(10):hover:after {
+  content: "고경민";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(11):hover:after {
+  content: "한창원";
+}
+body #sect4 .rtcontent ul.wrap li:nth-child(5) ul li:nth-child(12):hover:after {
+  content: "심석희";
+}
+body #sect4 article {
+  display: none;
+  z-index: 99;
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body #sect4 article .close {
+  position: absolute;
+  display: block;
+  right: 3%;
+  top: 2%;
+}
+body #sect4 article .inner {
+  display: flex;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+body #sect4 article .inner figure {
+  width: 300px;
+}
+body #sect4 article .inner figure img {
+  width: 100%;
+}
+body #sect4 article .inner .desc h2 {
+  margin-bottom: 50px;
+  font-weight: 900;
+}
+body #sect4 article .inner .desc h4 {
+  margin-bottom: 10px;
+}
+body #sect4 article .aside {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+}
+
+@media screen and (max-width: 521px) {
+  #sect1 .swiper-slide .decs_wrap h2 {
+    font-size: 20px;
+  }
+  #sect1 .swiper-slide .decs_wrap h3 {
+    font-size: 15px;
+  }
+  #sect4 {
+    flex-direction: column;
+  }
+  #sect4 .sect4_menu {
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+  }
+  #sect4 .sect4_menu h2 {
+    margin-top: 1rem;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2vw;
+    width: 16.6vw;
+    height: 6.3vh;
+    line-height: 6.3vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li::before {
+    display: none;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.pink {
+    line-height: 9vh;
+    background: #FCE1E6;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li:hover {
+    background: #FCE1E6;
+    color: #000;
+    font-weight: bold;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.on {
+    background: #FCE1E6;
+    color: #000;
+    font-weight: bold;
+  }
+  #sect4 .rtcontent {
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+  }
+  #sect4 .rtcontent ul.wrap {
+    width: 80vw;
+  }
+  #sect4 .rtcontent ul.wrap > li ul {
+    position: absolute;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #sect4 .rtcontent ul.wrap > li ul li {
+    width: 18vw;
+    margin-bottom: 10px;
+  }
+  #sect4 article {
+    width: 100vw;
+    height: 80vh;
+  }
+  #sect4 article .close img {
+    width: 7vw;
+  }
+  #sect4 article .aside img {
+    width: 10vw;
+  }
+  #sect4 article .inner {
+    flex-direction: column;
+  }
+  #sect4 article .inner .desc {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 522px) {
+  #sect1 .swiper-slide .decs_wrap h2 {
+    font-size: 40px;
+  }
+  #sect1 .swiper-slide .decs_wrap h3 {
+    font-size: 30px;
+  }
+  #sect4 {
+    flex-direction: column;
+  }
+  #sect4 .sect4_menu {
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+  }
+  #sect4 .sect4_menu h2 {
+    margin-top: 0;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    width: 16.5vw;
+    height: 7vh;
+    line-height: 7vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.pink {
+    width: 16.5vw;
+    height: 7vh;
+    line-height: 9vh;
+    background: #FCE1E6;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li:hover {
+    background: #FCE1E6;
+    color: #000;
+    font-weight: bold;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.on {
+    background: #FCE1E6;
+    color: #000;
+    font-weight: bold;
+  }
+  #sect4 .rtcontent {
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+  }
+  #sect4 .rtcontent ul.wrap > li ul {
+    position: absolute;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #sect4 .rtcontent ul.wrap > li ul li {
+    width: 18vw;
+    margin-bottom: 10px;
+  }
+  #sect4 article {
+    width: 60vw;
+    height: 70vh;
+  }
+  #sect4 article .close img {
+    width: 5vw;
+  }
+  #sect4 article .aside img {
+    width: 7vw;
+  }
+  #sect4 article .inner {
+    flex-direction: column;
+  }
+  #sect4 article .inner .desc {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #sect4 {
+    flex-direction: row;
+  }
+  #sect4 .sect4_menu {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li {
+    position: absolute;
+    font-size: 1vw;
+    background: none;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li:hover {
+    background: none;
+    color: #fff;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.on {
+    background: none;
+    color: #fff;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.pink {
+    background: none;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu .pink {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 3vw;
+    height: 8vh;
+    line-height: 8vh;
+    background: #FCE1E6;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu .up1 {
+    top: -3%;
+    right: -43%;
+    transform: translate(-50%);
+    z-index: 10;
+    width: 85px;
+    height: 75px;
+    line-height: 8vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu .down1 {
+    top: 69%;
+    right: -42.5%;
+    transform: translate(-50%);
+    z-index: 10;
+    width: 85px;
+    height: 75px;
+    line-height: 8vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu .up2 {
+    position: relative;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    width: 85px;
+    height: 75px;
+    line-height: 8vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu .down2 {
+    top: 60%;
+    left: -9%;
+    transform: translate(-50%);
+    z-index: 10;
+    width: 85px;
+    height: 75px;
+    line-height: 8vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu .up3 {
+    top: -3%;
+    left: -7%;
+    transform: translate(-36%);
+    z-index: 10;
+    width: 85px;
+    height: 75px;
+    line-height: 8vh;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li::before {
+    display: inline-block;
+    z-index: -5;
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.up1::before {
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: 173.2px solid #000000;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.down1::before {
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 173.2px solid #000000;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.up2::before {
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: 173.2px solid #000000;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.down2::before {
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 173.2px solid #000000;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.up3::before {
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: 173.2px solid #000000;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+  #sect4 .sect4_menu .sect4_tabmenu li.pink::before {
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 173.2px solid #FCE1E6;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #sect4 .rtcontent {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+  }
+  #sect4 .rtcontent ul.wrap > li ul {
+    width: 45vw;
+    height: 75vh;
+  }
+  #sect4 .rtcontent ul.wrap > li ul li {
+    width: 10vw;
+    height: 10vw;
+  }
+  #sect4 .rtcontent ul.wrap > li ul li:after {
+    line-height: 10vw;
+    font-size: 1.2vw;
+  }
+  #sect4 article {
+    width: 45vw;
+    height: 60vh;
+  }
+  #sect4 article .close img {
+    width: 2.5vw;
+  }
+  #sect4 article .aside img {
+    width: 4vw;
+  }
+  #sect4 article .inner {
+    flex-direction: row;
+    height: 40vh;
+    width: 40vw;
+  }
+  #sect4 article .inner figure {
+    margin-right: 2vw;
+  }
+}/*# sourceMappingURL=index.css.map */
